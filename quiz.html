@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Generator</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+  <div class="quiz-app">
+    <h1>Personalized Quiz Generator</h1>
+
+    <div class="quiz-options">
+      <label>
+        Number of Questions:
+        <input type="number" class="question-count" min="1" max="20" value="5">
+      </label>
+      <label>
+        Category:
+        <select class="category">
+          <!-- Categories will be loaded dynamically -->
+        </select>
+      </label>
+      <label>
+        Difficulty:
+        <select class="difficulty">
+          <option value="easy">Easy</option>
+          <option value="medium">Medium</option>
+          <option value="hard">Hard</option>
+        </select>
+      </label>
+      <button class="start-quiz-button">Start Quiz</button>
+    </div>
+
+    <div class="quiz-container">
+      <!-- Questions will be loaded here dynamically -->
+    </div>
+
+    <div class="result">
+      <h2>Your Score: <span class="score"></span></h2>
+    </div>
+  </div>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
